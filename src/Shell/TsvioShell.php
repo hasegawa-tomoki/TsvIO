@@ -1,5 +1,5 @@
 <?php
-namespace TsvIO\Shell;
+namespace Tsvio\Shell;
 
 use Cake\Cache\Cache;
 use Cake\Console\Shell;

@@ -1,5 +1,5 @@
 <?php
-namespace TsvIO\Shell\Task;
+namespace Tsvio\Shell\Task;
 
 use Cake\Console\Shell;
 use Cake\Core\Configure;
