@@ -2,6 +2,8 @@
     "name": "hasegawa-tomoki/tsvio",
     "description": "TsvIO plugin for CakePHP",
     "type": "cakephp-plugin",
+	"keywords": ["cakephp", "import", "export"], 
+	"license": "MIT", 
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0"
