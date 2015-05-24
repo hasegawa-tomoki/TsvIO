@@ -1,5 +1,5 @@
 {
-    "name": "hasegawa-tomoki/TsvIO",
+    "name": "hasegawa-tomoki/tsvio",
     "description": "TsvIO plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
