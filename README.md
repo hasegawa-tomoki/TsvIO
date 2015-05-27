@@ -1,6 +1,6 @@
-# TsvIO plugin for CakePHP3
+# TsvIO shell plugin for CakePHP3
 
-Import / export database table records from / to tsv filles.
+Shell command to import / export database table records from / to tsv filles.
 
 ## Installation
 
@@ -10,7 +10,6 @@ You can install this plugin into your CakePHP application using [composer](http:
 2. Run ```composer update```.
 3. Add ```Plugin::load('Tsvio');``` to bottom of your bootstrap.php.
 4. ```bin/cake tsvio import <table>``` or ```bin/cake tsbio export <table>```.
-
 
 * ```import``` truncates all records.
 * You can use ```all``` in ```import``` command as ```<table>``.
