@@ -9,7 +9,10 @@ You can install this plugin into your CakePHP application using [composer](http:
 1. Add ```"hasegawa-tomoki/tsvio": "*"``` to ```require``` section of composer.json.
 2. Run ```composer update```.
 3. Add ```Plugin::load('Tsvio');``` to bottom of your bootstrap.php.
-4. ```bin/cake tsvio import <table>``` or ```bin/cake tsbio export <table>```
+4. ```bin/cake tsvio import <table>``` or ```bin/cake tsbio export <table>```.
+
+* ```import``` truncates all records.
+* You can use to specify tables to import.
 
 ## License
 
