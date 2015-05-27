@@ -11,8 +11,9 @@ You can install this plugin into your CakePHP application using [composer](http:
 3. Add ```Plugin::load('Tsvio');``` to bottom of your bootstrap.php.
 4. ```bin/cake tsvio import <table>``` or ```bin/cake tsbio export <table>```.
 
+
 * ```import``` truncates all records.
-* You can use to specify tables to import.
+* You can use ```all``` in ```import``` command as ```<table>``.
 
 ## License
 
