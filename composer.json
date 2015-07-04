@@ -2,7 +2,7 @@
     "name": "hasegawa-tomoki/tsvio",
     "description": "Shell command to import / export database table records from / to tsv filles. CakePHP3 plugin.",
     "type": "cakephp-plugin",
-	"keywords": ["cakephp", "import", "export"], 
+	"keywords": ["cakephp", "cakephp3", "import", "export", "tsv"], 
 	"license": "MIT", 
     "require": {
         "php": ">=5.4.16",
