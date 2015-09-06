@@ -204,10 +204,12 @@ class TsvioTask extends Shell
         $primary = $this->getPrimaryKey($model);
         $exclude = array_merge($primary, ['created', 'modified', 'updated']);
 
+        /*
         $associations = $model->associations();
         foreach ($associations->keys() as $assocName) {
             $columns[] = $associations->get($assocName)->property();
         }
+        */
         return array_values(array_diff($columns, $exclude));
     }
 }
