@@ -35,6 +35,11 @@ class ImportTask extends TsvioTask
 
         $fp = fopen(sprintf("%s/%s.txt", $this->path, $table), 'r');
 
+        // Disable foreign key checks
+        $model->connection()->execute('set FOREIGN_KEY_CHECKS = 0;');
+        // Begin transaction
+        $model->connection()->begin();
+
         // Truncate table
         $model->deleteAll([]);
 
@@ -50,6 +55,12 @@ class ImportTask extends TsvioTask
             $model->save($record);
             if ($idx++ % 10 == 0){ $this->out('.', 0); }
         }
+
+        // Enable foreign key checks
+        $model->connection()->execute('set FOREIGN_KEY_CHECKS = 1;');
+        // Commit transaction
+        $model->connection()->commit();
+
         fclose($fp);
 
         $this->out(' done');
